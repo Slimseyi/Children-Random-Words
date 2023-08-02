@@ -1,91 +1,115 @@
 body {
-    background-image: url('https://images.unsplash.com/photo-1527402858-36f052d83df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80');
+    background-image: url(background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center center;
   }
   
   
   h1{
-    color: red;
-    text-align: center;  
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    color: black;
+    font-variant: small-caps;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-seri;
+    line-height: normal;
+    text-align: center;
+    font-size: 66px;
+    background: linear-gradient(184deg, #000 10%, rgba(33, 90, 76, 0.58) 69.66%, rgba(0, 0, 0, 0.00) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
 .header {
     
     background-color: ;
     text-decoration: ;
-    margin-bottom: 12px;
-    border-bottom: 2px solid black;
-    
-    
+    margin-bottom: 22px;
   }
-  
-  
-  button {
+
+  #button{
+    text-align: center;
+  }
+
+   #Word2Button,
+  #Word3Button,
+  #Word4Button,
+  #Word5Button,
+  #Word6Button,
+  #Word7Button {
+    padding: 20px 10px; 
+    border-radius: 10px;
+
+  }
+
+  .all-buttons {
     /* Button styles */
     background-color: #f0f0f0;
-    border: 15;
-    padding: 10px 20px;
-    font-size: 26px;
+    border: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #D9D9D9;
+    box-shadow: 0px 11px 15px 2px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: relative; /* Needed for pseudo-element positioning */
-    overflow: hidden; /* Hide overflow of pseudo-element */
-    cursor:pointer;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 10px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+
+  .all-buttons{
+    display: inline-block;
+    padding: 8px 16px;
+    outline: none;
+    position: relative;
+    bottom: -1rem;
+    left: 9rem;
   }
   
-  button::before {
-    /* Custom cursor styles */
-    content: '';
-    position: absolute;
+  .all-buttons:hover{
+    background: #7E7373;
+    box-shadow: 0px 11px 15px 2px rgba(0, 0, 0, 0.22);
+    color: #ffffff;
+
+    }
+  
+  
+  #resultContainer{   
+    text-align: center;
+    color: black;
+    font-size:40px;   
+  }
+
+  .resulter{
+    position: relative;
+    top: 12rem;
+  }
+  
+
+
+/* Styles for mobile screens */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+.background-blur{
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 0, 0, 0.5); /* Change the cursor color */
-    pointer-events: none; /* Prevent the pseudo-element from blocking mouse events */
-    opacity: 0; /* Start with transparent cursor */
-    transition: opacity 0.3s ease; /* Add a smooth transition */
-  }
-  
-  button:hover::before {
-    /* Hover styles */
-    opacity: 1; /* Make the cursor visible on hover */
-  }
-  
-  
-  #resultContainer{
-    
-    text-align: center;
-    color: black;
-    font-size:10px;
-    margin-top: 48px;
-    
-  }
-  
-  #Word2Button, #Word3Button, #Word4Button, #Word5Button, #Word6Button, #Word7Button{  
-    background-color:gold;
-  
-    padding: 40px 30px;
-    border-radius: 25px;
-    text-align:center; 
-    box-shadow: 0 11px 4px rgba(0, 0, 0, 1);
-    
-      
-  }
-
-/* Styles for screens larger than 600px */
-@media (min-width: 601px) {
-  /* Add your existing CSS styles for larger screens here */
-}
-
-/* Styles for screens up to 600px */
-@media (min-width: 600px) {
-  body {
+    background-image: url(background.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center center;
-  }
+    filter: blur(2px);
+    z-index: -1;
+
+}
 
   h1 {
     text-align: center;
@@ -108,6 +132,38 @@ body {
     font-weight:bold;
   }
 
+.all-buttons{
+    border: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #D9D9D9;
+    box-shadow: 0px 11px 15px 2px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    position: relative;
+    top: 22rem;
+    left: 0.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.all-buttons{
+    display: inline-block;
+    padding: 8px 16px;
+    outline: none;
+    position: relative;
+    bottom: -3rem;
+    left: 3rem;
+}
+
+.resulter{
+    position: relative;
+    top: -95px;
+}
+
   #Word2Button,
   #Word3Button,
   #Word4Button,
@@ -118,3 +174,5 @@ body {
     border-radius: 10px; /* Increase the border-radius for rounded buttons */
   }
 }
+
+
