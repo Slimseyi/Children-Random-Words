@@ -4,6 +4,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    height: 100%;
+    overflow: hidden;
   }
   
   
@@ -59,6 +61,7 @@ body {
   }
 
   .all-buttons{
+    color: #000000;
     display: inline-block;
     padding: 8px 16px;
     outline: none;
@@ -83,7 +86,7 @@ body {
 
   .resulter{
     position: relative;
-    top: 12rem;
+    top: 7rem;
   }
   
 
@@ -93,6 +96,8 @@ body {
   body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow: hidden;
   }
 
 .background-blur{
@@ -116,7 +121,8 @@ body {
   }
 
   .header {
-    /* Adjust background color or other styles for mobile */
+   position: relative;
+   top:60px;
   }
 
   button {
@@ -139,9 +145,6 @@ body {
     background-color: #D9D9D9;
     box-shadow: 0px 11px 15px 2px rgba(0, 0, 0, 0.22);
     cursor: pointer;
-    position: relative;
-    top: 22rem;
-    left: 0.2rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     font-size: 12px;
@@ -154,14 +157,15 @@ body {
     display: inline-block;
     padding: 8px 16px;
     outline: none;
+    touch-action: manipulation;
     position: relative;
-    bottom: -3rem;
-    left: 3rem;
+    top: 19rem;
+    left: 2.7rem;
 }
 
 .resulter{
     position: relative;
-    top: -95px;
+    top: -6rem;
 }
 
   #Word2Button,
@@ -170,6 +174,7 @@ body {
   #Word5Button,
   #Word6Button,
   #Word7Button {
+
     padding: 20px 10px; /* Increase the padding for larger buttons */
     border-radius: 10px; /* Increase the border-radius for rounded buttons */
   }
