@@ -122,7 +122,7 @@ body {
 
   .header {
    position: relative;
-   top:60px;
+   top:10px;
   }
 
   button {
@@ -134,7 +134,6 @@ body {
 
   #resultContainer {
     font-size: 30px;
-    margin-top: 34px;
     font-weight:bold;
   }
 
@@ -159,13 +158,13 @@ body {
     outline: none;
     touch-action: manipulation;
     position: relative;
-    top: 19rem;
+    top: 10rem;
     left: 2.7rem;
 }
 
 .resulter{
     position: relative;
-    top: -6rem;
+    top: -12rem;
 }
 
   #Word2Button,
