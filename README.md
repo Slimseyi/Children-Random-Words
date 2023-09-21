@@ -5,9 +5,11 @@ This is a word and meaning generator app designed for children, focusing on 2 to
 
 Features
 
-Generate random 2 to 7 letter words along with their meanings.
-Child-friendly interface with simple graphics and easy navigation.
-Learn mode to display wrandom word meanings.
+1. Generate random (2 to 7 letter words) along with their meanings.
+
+2. Child-friendly interface with simple graphics and easy navigation.
+
+3. Learning mode to display random word meanings.
 Fun web app to reinforce word knowledge.
 
 

@@ -22,7 +22,6 @@ body {
   }
   
 .header {
-    
     background-color: ;
     text-decoration: ;
     margin-bottom: 22px;
@@ -32,7 +31,7 @@ body {
     text-align: center;
   }
 
-   #Word2Button,
+  #Word2Button,
   #Word3Button,
   #Word4Button,
   #Word5Button,
@@ -44,7 +43,6 @@ body {
   }
 
   .all-buttons {
-    /* Button styles */
     background-color: #f0f0f0;
     border: none;
     margin-top: 20px;
@@ -68,6 +66,7 @@ body {
     position: relative;
     bottom: -1rem;
     left: 9rem;
+    transition: 0.5s ease;
   }
   
   .all-buttons:hover{
@@ -91,14 +90,13 @@ body {
   
 
 
-/* Styles for mobile screens */
-@media screen and (max-width: 768px) {
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-  }
+
+
+
+/* Styles for most mobile screens */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 414px)  {
 
 .background-blur{
     position: fixed;
@@ -113,7 +111,6 @@ body {
     background-position: center center;
     filter: blur(2px);
     z-index: -1;
-
 }
 
   h1 {
@@ -123,13 +120,6 @@ body {
   .header {
    position: relative;
    top:10px;
-  }
-
-  button {
-    /* Adjust button styles for mobile */
-    font-size: 20px; /* Decrease the font size for buttons */
-    padding: 8px 16px; /* Adjust the padding of buttons */
-    background-color: rgba(255, 0, 0, 0.5); /* Change the cursor color */
   }
 
   #resultContainer {
@@ -174,8 +164,8 @@ body {
   #Word6Button,
   #Word7Button {
 
-    padding: 20px 10px; /* Increase the padding for larger buttons */
-    border-radius: 10px; /* Increase the border-radius for rounded buttons */
+    padding: 20px 10px;
+    border-radius: 10px; 
   }
 }
 
